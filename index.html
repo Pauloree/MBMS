@@ -48,27 +48,34 @@
         <div class="branding d-flex align-items-center">
             <div class="container position-relative d-flex align-items-center justify-content-end">
                 
-                <a href="">
+                <a href="" class="logo d-flex align-items-center me-auto">
                     <img src="assets/img/logo.png" alt="">
                 </a>
 
                 <!-- Menu -->
-                 <nav>
+                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li> <a href=""> Home </a> </li>
-                        <li> <a href=""> Sobre </a> </li>
-                        <li> <a href=""> Serviços </a> </li>
-                        <li> <a href=""> Departamentos </a> </li>
-                        <li> <a href=""> Médicos </a> </li>
-                        <li> <a href=""> Contato </a> </li>
-                        <li> <a href=""> Mais Opções </a> 
+                        <li> <a href="#hero" class="active"> Home </a> </li>
+                        <li> <a href="#sobre"> Sobre </a> </li>
+                        <li> <a href="#servicos"> Serviços </a> </li>
+                        <li> <a href="#departamentos"> Departamentos </a> </li>
+                        <li> <a href="#medicos"> Médicos </a> </li>
+                        <li> <a href="#contato"> Contato </a> </li>
+                        <li class="dropdown"> 
+                            <a href="#"> <span> Mais Opções</span> 
+                                <i class="bi bi-chevron-down"></i>
+                            </a> 
                             <ul>
-                                <li> Opção 1 </li>
-                                <li> Opção 2 </li>
-                                <li> Submenu
+                                <li> <a href="#">Opção 1</a> </li>
+                                <li> <a href="#">Opção 2</a> </li>
+                                <li class="dropdown"> 
+                                    <a href="#">
+                                        <span>Submenu</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </a>
                                     <ul>
-                                        <li> Submenu 1 </li>
-                                        <li> Submenu 2 </li>
+                                        <li> <a href="#">Submenu 1</a> </li>
+                                        <li> <a href="#">Submenu 2</a> </li>
                                     </ul>
                                 </li> <!-- Fim Submenu -->
                             
