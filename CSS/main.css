@@ -13,7 +13,7 @@
     --nav-bg-topbar: #3fbbc0;
     --nav-color2: #ebebeb;
     --surface: #fff;
-
+    --accent-color:var(--nav-dropdown-background)
   }
   
   body {
@@ -377,7 +377,12 @@
     background: red;
   }
   
-  
+  @media (max-height:500px), 
+  (max-width:500px)  {
+    .hero .carousel {
+        min-height: 100vh;
+    }
+  }
 
 
 /* ---------------------------------
@@ -460,15 +465,10 @@ section, .section {
     }
 }
 
-  
-
-  @media (max-height:500px), 
-  (max-width:500px)  {
-    .hero .carousel {
-        min-height: 100vh;
-    }
+  .accent-background {
+    background: #3fbbc0;
+    color: e0e0e0;  
   }
-
 
   .section-title {
     text-align: center;
@@ -496,3 +496,49 @@ section, .section {
     bottom: 0;
     margin: auto;
   }
+
+  /* About */
+
+  .sobre .content h3 {
+    font-size: 1.75rem;
+    /* Multiplicar *16 ou dividir /16 */
+    font-weight: 700;
+    color: rgb(15, 179, 179);
+  }
+
+  .sobre .content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sobre .content ul li {
+    padding: 10px 0 0 0;
+    display: flex;
+  }
+
+  .sobre .content ul i {
+    color: #17cdd3;
+    margin-left: 0.5rem;
+    line-height: 1.2;
+    font-size: 1.25rem;
+  }
+
+  .sobre .pulsating-play-btn {
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+  }
+
+  /* Pulsating Play Button */
+
+  .pulsating-play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+
