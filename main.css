@@ -681,3 +681,22 @@ section, .section {
   .scroll-top:hover i {
     color: #5217b1;
   }
+
+  /* features // características */
+
+  .features .features-image {
+    position: realtive;
+    min-height: 400px;
+  }
+
+  .features .features-image img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  
