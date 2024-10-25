@@ -369,7 +369,7 @@ font-weight: 700;
   justify-content: center;
 } 
 
-.hero .carousel-indicators {
+.hero .carousel-indicators li{
   cursor: pointer;
   background: #444;
   width: 12px;
@@ -381,7 +381,7 @@ font-weight: 700;
   transition: 0.3s;
 }
 
-.hero .carousel-indicators.active  {
+.hero .carousel-indicators li.active  {
   opacity: 1;
   background: red;
 }
@@ -889,9 +889,66 @@ section,
   background: #00b0c4;
 }
 
+
+
+/* Médicos */
+.medicos .team-member {
+  background: #efefef;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.medicos .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.medicos .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  
+}
+
+.medicos .team-member .social a {
+  background: whitesmoke;
+  color: #272727;
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  transition: ease-in-out 0.3s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medicos .team-member .social a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+
+.medicos .team-member .member-info {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.medicos .team-member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+
+
 /* FAQ */
 .faq .faq-container .faq-item {
-  background: #cdcfcf;
+  background: #21e4e4;
   position: relative;
   padding: 10px;
   margin-bottom: 15px;
@@ -954,5 +1011,33 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: #272727;
+  color: #6d1d1d;
+}
+
+/* Responsivos  */
+
+@media (max-height: 500px), 
+(max-width: 580px) {
+  .hero .carousel {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: 640px) {  
+  .hero .carousel-control-prev {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 640px) {   
+  .hero .carousel-control-next {
+    padding-right: 15px;
+  }
 }
